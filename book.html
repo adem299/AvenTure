@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>book</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="icon" type="image/x-icon" href="img/fav-icon.png">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+    <a href="home.html" class="logo"><span>AV</span>enture</a>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="package.html">Destination</a>
+        <a href="Book.html">Book</a>
+        <a href="jobs.html">find job</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(img/header-bg-2.png) no-repeat">
+   <h1>book now</h1>
+</div>
+
+<!-- booking section starts  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">book your trip!</h1>
+
+   <form action="book_form.php" method="post" class="book-form">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>name :</span>
+            <input type="text" placeholder="enter your name" name="name">
+         </div>
+         <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+         </div>
+         <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="enter your address" name="address">
+         </div>
+         <div class="inputBox">
+            <span>going to :</span>
+            <input type="text" placeholder="place you want to visit" name="location">
+         </div>
+         <div class="inputBox">
+            <span>how many :</span>
+            <input type="number" placeholder="number of guests" name="guests">
+         </div>
+         <div class="inputBox">
+            <span>check in :</span>
+            <input type="date" name="checkIn">
+         </div>
+      </div>
+
+      <input type="submit" value="submit" class="btn" name="send">
+
+   </form>
+
+</section>
+
+
+
+
+<!-- footer section starts  -->
+<!-- Footer section-->
+<section class="footer" style="background: url(img/footer-bg.jpg);">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>Home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Destination</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Gallery</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Book</a>
+        </div>
+        
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i> +62 8963 0048 231</a>
+            <a href="#"><i class="fas fa-phone"></i> +62 888 0054 123</a>
+            <a href="#"><i class="fas fa-envelope"></i> adem01@upi.edu</a>
+            <a href="#"><i class="fas fa-map"></i> majalengka, Indonesia - 45466</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+        </div>
+        
+    </div>
+
+    <div class="credit">Created by <span>Ade Mulyana</span> | all rights reserved!</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+    let menu = document.querySelector('#menu-btn');
+    let navbar = document.querySelector('.header .navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    };
+
+    window.onscroll= () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    };
+</script>
+
+</body>
+</html>
